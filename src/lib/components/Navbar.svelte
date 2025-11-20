@@ -5,7 +5,7 @@
 <nav class="text-white p-4 shadow-md bg-[#1a1a1a]">
     <div class="container mx-auto flex justify-between items-center">
         <a href="/" class="text-xl font-bold hover:text-orange-400 transition"
-            >Svelte Demo SCR</a
+            >SCR</a
         >
         <div class="flex items-center space-x-6">
             <ul class="flex space-x-6">
