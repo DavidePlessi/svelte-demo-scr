@@ -1,6 +1,6 @@
 # Svelte Demo SCR - School Registry System
 
-A SvelteKit demo application for managing students and teachers with CRUD operations, filtering, inline editing, and localStorage persistence.
+A SvelteKit demo application for managing students and teachers with CRUD operations, filtering, inline editing, and localStorage persistence (with a toggle switch).
 
 ## Features
 
@@ -47,6 +47,8 @@ src/
 │   ├── services/       # Base service with CRUD operations
 │   ├── types.ts        # TypeScript interfaces
 │   └── errors.ts       # Error handling
+│   └── stores.ts       # LocalStorageEnabled store
+│   └── utils.ts        # Utility functions
 └── routes/
     ├── students/       # Student management
     └── teachers/       # Teacher management
