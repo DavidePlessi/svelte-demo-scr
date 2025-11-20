@@ -14,6 +14,8 @@ export abstract class BaseService<T extends { id: string }, F> {
             localStorageEnabled.subscribe((enabled) => {
                 if (!enabled) {
                     localStorage.removeItem(this.storageKey);
+                } else {
+                    this.save();
                 }
             });
         }
