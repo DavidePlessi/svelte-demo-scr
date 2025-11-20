@@ -31,6 +31,30 @@ npm run build
 npm run preview
 ```
 
+## Docker Deployment
+
+The application can be deployed using Docker.
+
+### Prerequisites
+- Docker
+- Docker Compose
+
+### Running with Docker Compose
+To start the application:
+
+```bash
+docker-compose -f docker/docker-compose.yml up -d --build
+```
+
+This will:
+1. Build the SvelteKit application image
+2. Start the application container on port 3005
+
+### Configuration
+- **Application Port**: Defaults to 3005 (configured in `docker/docker-compose.yml` and `docker/Dockerfile`)
+
+**Note:** Inside the docker folder you can find an example of nginx configuration file.
+
 ## Tech Stack
 
 - SvelteKit v2.47.1
