@@ -57,6 +57,7 @@ export interface TeacherFilter extends EntityFilter {
     subject?: Subject;
 }
 
-export interface Filter {
-    [key: string]: string | number | undefined;
-}
+// OLD
+// export interface Filter {
+//     [key: string]: string | number | undefined;
+// }

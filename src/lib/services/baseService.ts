@@ -2,8 +2,9 @@ import { browser } from '$app/environment';
 import { AppError, ErrorCode } from '$lib/errors';
 import { get } from 'svelte/store';
 import { localStorageEnabled } from '$lib/stores';
+import type { Entity, EntityFilter } from '$lib/types';
 
-export abstract class BaseService<T extends { id: string }, F> {
+export abstract class BaseService<T extends Entity, TFilter extends EntityFilter> {
     protected items: T[] = [];
     protected storageKey: string;
 
@@ -23,7 +24,7 @@ export abstract class BaseService<T extends { id: string }, F> {
 
     protected abstract getDefaults(): T[];
 
-    public abstract get(filter?: F): T[];
+    public abstract get(filter?: TFilter): T[];
 
     private load(): void {
         if (!browser) {
