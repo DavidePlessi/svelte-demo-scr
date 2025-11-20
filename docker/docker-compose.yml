@@ -1,0 +1,15 @@
+name: svelte-demo-scr
+
+services:
+  app:
+    image: fiveamtech/svelte-demo-scr:latest
+    build:
+      context: ../ 
+      dockerfile: ./docker/Dockerfile
+    container_name: svelte-demo-scr
+    restart: always
+    ports:
+      - "3005:3005"
+    environment:
+      NODE_ENV: production
+      PORT: 3005

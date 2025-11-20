@@ -1,0 +1,9 @@
+services:
+  app:
+    image: fiveamtech/svelte-demo-scr:latest
+    restart: always
+    ports:
+      - "3005:3005"
+    environment:
+      NODE_ENV: production
+      PORT: 3005
