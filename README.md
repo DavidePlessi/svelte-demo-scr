@@ -14,7 +14,7 @@ A SvelteKit demo application for managing students and teachers with CRUD operat
 
 ```bash
 git clone https://github.com/DavidePlessi/svelte-demo-scr.git
-cd scr-tinental
+cd svelte-demo-scr
 npm install
 ```
 
